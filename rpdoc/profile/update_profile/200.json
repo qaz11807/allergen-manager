@@ -1,0 +1,102 @@
+{
+  "name": "更新成功",
+  "originalRequest": {
+    "method": "PUT",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer GVvIDXGdPC0Me_hTqmDuYPDJn-Qs81PKWrkmgMxXso0"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/profile",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "profile"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"birthday\": \"2021/03/25\",\n  \"name\": \"chang\",\n  \"lang\": \"zh-TW\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "200",
+  "code": 200,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "ETag",
+      "value": "W/\"7a45c557a093c976db9150cef280eda1\""
+    },
+    {
+      "key": "Cache-Control",
+      "value": "max-age=0, private, must-revalidate"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "3effb194-f874-4646-9622-67ec009e5e3d"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.005571"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "91"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/profile_controller/update_spec.rb:26"
+    }
+  ],
+  "body": "{\n  \"data\": {\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\",\n    \"birthday\": \"2021-03-25T00:00:00.000Z\",\n    \"phone\": null\n  }\n}"
+}

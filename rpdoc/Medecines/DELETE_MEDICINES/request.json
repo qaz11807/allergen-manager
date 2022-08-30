@@ -1,0 +1,43 @@
+{
+  "name": "刪除多個抗過敏藥",
+  "request": {
+    "method": "DELETE",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer QtVLSUT4d-LGsnUygpWfrzgfrJHCkr7sLBpZE4rJ9Wo"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/medicines",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "medicines"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"medicine_ids\": [\n    4,\n    3,\n    1,\n    5,\n    2\n  ]\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "response": [
+
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "取得所有過敏原",
+  "request": {
+    "method": "GET",
+    "header": [
+      {
+        "key": "Authorization",
+        "value": "Bearer va-cyFqvAKbGd4Xp02OKJAM5AxZh0jTeCh0vjIdn8zE"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/allergens",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "allergens"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": null
+  },
+  "response": [
+
+  ]
+}

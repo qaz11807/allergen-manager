@@ -1,0 +1,43 @@
+{
+  "name": "刪除多個過敏原",
+  "request": {
+    "method": "DELETE",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer ZR0jMxRsXg9V8bYVZRcA3UtdFFbATe1sv7YQmGQ_9Lc"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/allergens",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "allergens"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"allergen_ids\": [\n    4,\n    5,\n    2,\n    3,\n    1\n  ]\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "response": [
+
+  ]
+}

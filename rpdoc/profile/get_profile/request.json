@@ -1,0 +1,31 @@
+{
+  "name": "取得個人資料",
+  "request": {
+    "method": "GET",
+    "header": [
+      {
+        "key": "Authorization",
+        "value": "Bearer 9-Ksqus90biOQGAgQs3tEoQwTG7I2QK6ghShszx3hSU"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/profile",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "profile"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": null
+  },
+  "response": [
+
+  ]
+}

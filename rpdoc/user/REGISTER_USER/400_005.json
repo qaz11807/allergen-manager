@@ -1,0 +1,95 @@
+{
+  "name": "註冊失敗(信箱已被使用)",
+  "originalRequest": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/user/register",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "user",
+        "register"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"email\": \"test23@test.com\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"JhDt0xVzgxtgpbc-Wg2x7X9yjNz7Nt5zb-9Xkm_W7fU\",\n  \"client_secret\": \"gcmeXDsjljlgjuAn0wUiQsgRpToVysWzflQX9GN6sfM\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "400",
+  "code": 400,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "5416d47f-ed93-40be-9e44-411a73d866f1"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.002589"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "103"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/user_controller/register_spec.rb:61"
+    }
+  ],
+  "body": "{\n  \"error_code\": 400005,\n  \"error_message\": \"email already registered\",\n  \"error_key\": \"email_already_registered\"\n}"
+}

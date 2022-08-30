@@ -1,0 +1,40 @@
+{
+  "name": "註冊",
+  "request": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/user/register",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "user",
+        "register"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"email\": \"new_email@gmail.com\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"NyfRjVQqXKQpcokn8_g4TL7lqhDEETl0fwGw4ltH5Qw\",\n  \"client_secret\": \"5HTWekQa-XeGwWkObeXtbhgRBiu6EfQNmvmCjX4FOcc\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "response": [
+
+  ]
+}

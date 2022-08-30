@@ -1,0 +1,41 @@
+{
+  "name": "刪除抗過敏藥",
+  "request": {
+    "method": "DELETE",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer bnvzCdVLbi04a7whtA9gBBwNguHIv1egPbykyM6Wg_w"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/medicines/12",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "medicines",
+        "12"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "formdata",
+      "formdata": [
+
+      ]
+    }
+  },
+  "response": [
+
+  ]
+}

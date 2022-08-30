@@ -1,0 +1,102 @@
+{
+  "name": "成功新增資料",
+  "originalRequest": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer 38t78Fw9gzTiuOeM_9EdcxBUycDPlcbf-n2tQWMeE-E"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/medicines",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "medicines"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"name\": \"anti allergery\",\n  \"expired_at\": \"2022-09-02T14:57:42.948+08:00\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "200",
+  "code": 200,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "ETag",
+      "value": "W/\"da6056a288b22e636859c41718f78c69\""
+    },
+    {
+      "key": "Cache-Control",
+      "value": "max-age=0, private, must-revalidate"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "1aafc649-a3c6-4f1e-a5fd-62b1d926e2d3"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.034474"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "200"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/medecines/base_controller/create_spec.rb:25"
+    }
+  ],
+  "body": "{\n  \"data\": {\n    \"id\": 11,\n    \"name\": \"anti allergery\",\n    \"manufacture\": null,\n    \"description\": null,\n    \"expired_at\": \"2022-09-02T06:57:42.948Z\",\n    \"created_at\": \"2022-08-30T06:57:42.971Z\",\n    \"updated_at\": \"2022-08-30T06:57:42.971Z\"\n  }\n}"
+}

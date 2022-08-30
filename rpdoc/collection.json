@@ -1,0 +1,2655 @@
+{
+  "collection": {
+    "info": {
+      "name": "Rpdoc",
+      "description": "",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Allergens",
+        "description": "",
+        "item": [
+          {
+            "name": "新增過敏原",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer NTM4q6V00kS7Rd5eM530PjE3E-X26AAjj-1sUA_o8os"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/allergens",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "allergens"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"fruit\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功新增資料",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer NTM4q6V00kS7Rd5eM530PjE3E-X26AAjj-1sUA_o8os"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"fruit\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"370a56c6deb77846dcfecf68b77457be\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "d01a1598-074e-41b2-b828-62272c1f83f6"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.065810"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "113"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/create_spec.rb:24"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": 11,\n    \"name\": \"fruit\",\n    \"created_at\": \"2022-08-30T06:57:41.909Z\",\n    \"updated_at\": \"2022-08-30T06:57:41.909Z\"\n  }\n}"
+              }
+            ]
+          },
+          {
+            "name": "刪除過敏原",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/x-www-form-urlencoded"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer uSHeAbe2FDNeQ-DoD1sWhQiOaDqfONW4dFk-T3TmGgs"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/allergens/12",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "allergens",
+                  "12"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+
+                ]
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功刪除資料",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/x-www-form-urlencoded"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer uSHeAbe2FDNeQ-DoD1sWhQiOaDqfONW4dFk-T3TmGgs"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens/12",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens",
+                      "12"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "formdata",
+                    "formdata": [
+
+                    ]
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"a58aab6ea5178b9ea82e9b99af805c74\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "4bd87e17-a8f0-4946-8b37-72ec0fa38668"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.013905"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "13"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/destroy_spec.rb:22"
+                  }
+                ],
+                "body": "{\n  \"data\": \"ok\"\n}"
+              },
+              {
+                "name": "更新資料失敗(找不到過敏原)",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/x-www-form-urlencoded"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer K8Qhk8yJMpsIvwLPnaR3oOwWg0s4HfS8WDTlsgiF6ao"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens/123456",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens",
+                      "123456"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "formdata",
+                    "formdata": [
+
+                    ]
+                  }
+                },
+                "status": "404",
+                "code": 404,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "549c2095-f1aa-40f5-ba4d-d3c044745591"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.077182"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "92"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/destroy_spec.rb:32"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 4040002,\n  \"error_message\": \"allergen not found\",\n  \"error_key\": \"allergen_not_found\"\n}"
+              }
+            ]
+          },
+          {
+            "name": "刪除多個過敏原",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer ZR0jMxRsXg9V8bYVZRcA3UtdFFbATe1sv7YQmGQ_9Lc"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/allergens",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "allergens"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"allergen_ids\": [\n    4,\n    5,\n    2,\n    3,\n    1\n  ]\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功刪除資料",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer ZR0jMxRsXg9V8bYVZRcA3UtdFFbATe1sv7YQmGQ_9Lc"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"allergen_ids\": [\n    4,\n    5,\n    2,\n    3,\n    1\n  ]\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"a58aab6ea5178b9ea82e9b99af805c74\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "a8e2accf-325f-42dc-8c52-f4dd3dc59c55"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.067947"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "13"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/bulk_destroy_spec.rb:26"
+                  }
+                ],
+                "body": "{\n  \"data\": \"ok\"\n}"
+              }
+            ]
+          },
+          {
+            "name": "刪除抗過敏藥",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/x-www-form-urlencoded"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer bnvzCdVLbi04a7whtA9gBBwNguHIv1egPbykyM6Wg_w"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/medicines/12",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "medicines",
+                  "12"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+
+                ]
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功刪除資料",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/x-www-form-urlencoded"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer bnvzCdVLbi04a7whtA9gBBwNguHIv1egPbykyM6Wg_w"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines/12",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines",
+                      "12"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "formdata",
+                    "formdata": [
+
+                    ]
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"a58aab6ea5178b9ea82e9b99af805c74\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "1b358dc8-3f8a-412a-a3e0-cb283cd2005f"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.009859"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "13"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/destroy_spec.rb:22"
+                  }
+                ],
+                "body": "{\n  \"data\": \"ok\"\n}"
+              },
+              {
+                "name": "更新資料失敗(找不到抗過敏藥)",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/x-www-form-urlencoded"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer 2IS7LUaf3cSj6hO7E06EdLfKd-ABCs0jJ9Hg_lcm2XQ"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines/123456",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines",
+                      "123456"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "formdata",
+                    "formdata": [
+
+                    ]
+                  }
+                },
+                "status": "404",
+                "code": 404,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "66915a01-9ebd-4eff-bf96-8dd1b2da7aa6"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.004408"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "92"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/destroy_spec.rb:32"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 4040003,\n  \"error_message\": \"medicine not found\",\n  \"error_key\": \"medicine_not_found\"\n}"
+              }
+            ]
+          },
+          {
+            "name": "取得所有過敏原",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer va-cyFqvAKbGd4Xp02OKJAM5AxZh0jTeCh0vjIdn8zE"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/allergens",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "allergens"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": null,
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功取得資料(分頁)",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer tNQT06WYSlTf893O5kVfz3CpyOIABv5RfYnas4FUJVc"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens"
+                    ],
+                    "query": [
+                      {
+                        "key": "page",
+                        "value": "1",
+                        "text": "text"
+                      },
+                      {
+                        "key": "per_page",
+                        "value": "5",
+                        "text": "text"
+                      }
+                    ]
+                  },
+                  "body": null
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"8470da88176b66cecca298d1de26e948\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "8a6f6ff8-e4b6-47ab-bd0d-bca9671e3f63"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.009769"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "664"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/index_spec.rb:30"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"current_page\": 1,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"allergens\": [\n      {\n        \"id\": 24,\n        \"name\": \"test allergen - 23\",\n        \"created_at\": \"2022-08-30T06:57:42.571Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.571Z\"\n      },\n      {\n        \"id\": 25,\n        \"name\": \"test allergen - 24\",\n        \"created_at\": \"2022-08-30T06:57:42.575Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.575Z\"\n      },\n      {\n        \"id\": 26,\n        \"name\": \"test allergen - 25\",\n        \"created_at\": \"2022-08-30T06:57:42.578Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.578Z\"\n      },\n      {\n        \"id\": 27,\n        \"name\": \"test allergen - 26\",\n        \"created_at\": \"2022-08-30T06:57:42.582Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.582Z\"\n      },\n      {\n        \"id\": 28,\n        \"name\": \"test allergen - 27\",\n        \"created_at\": \"2022-08-30T06:57:42.588Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.588Z\"\n      }\n    ]\n  }\n}"
+              }
+            ]
+          },
+          {
+            "name": "更新過敏原",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer OBBr8wtMPSh35CrsS6wy2b0gOnZaShGHO3vtuy4lj-E"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/allergens/34",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "allergens",
+                  "34"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"new name\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功更新資料",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer OBBr8wtMPSh35CrsS6wy2b0gOnZaShGHO3vtuy4lj-E"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens/34",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens",
+                      "34"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"new name\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"e0fe47a0c16d68526ccb32736f1b00b8\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "608b34e5-ec1c-4091-9498-43eacec1b50d"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.009472"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "116"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/update_spec.rb:26"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": 34,\n    \"name\": \"new name\",\n    \"created_at\": \"2022-08-30T06:57:42.690Z\",\n    \"updated_at\": \"2022-08-30T06:57:42.700Z\"\n  }\n}"
+              },
+              {
+                "name": "更新資料失敗(找不到過敏原)",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer Uwc9MBz3kdbxaVW_nlduNbWZvIKrVh-jBqpDHq0X6m0"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/allergens/123456",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "allergens",
+                      "123456"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"new name\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "404",
+                "code": 404,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "e420b821-918c-4bbb-a5e7-f1ac5fc75484"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.004619"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "92"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/allergens/base_controller/update_spec.rb:34"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 4040002,\n  \"error_message\": \"allergen not found\",\n  \"error_key\": \"allergen_not_found\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medecines",
+        "description": "",
+        "item": [
+          {
+            "name": "刪除多個抗過敏藥",
+            "request": {
+              "method": "DELETE",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer QtVLSUT4d-LGsnUygpWfrzgfrJHCkr7sLBpZE4rJ9Wo"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/medicines",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "medicines"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"medicine_ids\": [\n    4,\n    3,\n    1,\n    5,\n    2\n  ]\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功刪除資料",
+                "originalRequest": {
+                  "method": "DELETE",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer QtVLSUT4d-LGsnUygpWfrzgfrJHCkr7sLBpZE4rJ9Wo"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"medicine_ids\": [\n    4,\n    3,\n    1,\n    5,\n    2\n  ]\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"a58aab6ea5178b9ea82e9b99af805c74\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "69b93338-8a26-4e5f-8c97-7131c50e5374"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.037146"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "13"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/bulk_destroy_spec.rb:26"
+                  }
+                ],
+                "body": "{\n  \"data\": \"ok\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medicine",
+        "description": "",
+        "item": [
+          {
+            "name": "取得所抗過敏藥",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer SpGbwCwmr4w40l2OrmRhAjEqPJ7KkIkPVVFIdV8_FGo"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/medicines",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "medicines"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": null,
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功取得資料",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer QpUGZHj0eQjKyl8XNF8HPap8bt6fc9fQ9ihbrSLc5BY"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines"
+                    ],
+                    "query": [
+                      {
+                        "key": "page",
+                        "value": "1",
+                        "text": "text"
+                      },
+                      {
+                        "key": "per_page",
+                        "value": "5",
+                        "text": "text"
+                      }
+                    ]
+                  },
+                  "body": null
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"c70a5875cb127e7d9c565328d04ef351\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "02905463-278c-46da-a02b-6076f210b00d"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.010444"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "1149"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/index_spec.rb:30"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"current_page\": 1,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"medicines\": [\n      {\n        \"id\": 24,\n        \"name\": \"test allergen - 23\",\n        \"manufacture\": \"kdan\",\n        \"description\": \"this is description\",\n        \"expired_at\": \"2022-08-31T06:57:43.167Z\",\n        \"created_at\": \"2022-08-30T06:57:43.168Z\",\n        \"updated_at\": \"2022-08-30T06:57:43.168Z\"\n      },\n      {\n        \"id\": 25,\n        \"name\": \"test allergen - 24\",\n        \"manufacture\": \"kdan\",\n        \"description\": \"this is description\",\n        \"expired_at\": \"2022-08-31T06:57:43.171Z\",\n        \"created_at\": \"2022-08-30T06:57:43.171Z\",\n        \"updated_at\": \"2022-08-30T06:57:43.171Z\"\n      },\n      {\n        \"id\": 26,\n        \"name\": \"test allergen - 25\",\n        \"manufacture\": \"kdan\",\n        \"description\": \"this is description\",\n        \"expired_at\": \"2022-08-31T06:57:43.174Z\",\n        \"created_at\": \"2022-08-30T06:57:43.174Z\",\n        \"updated_at\": \"2022-08-30T06:57:43.174Z\"\n      },\n      {\n        \"id\": 27,\n        \"name\": \"test allergen - 26\",\n        \"manufacture\": \"kdan\",\n        \"description\": \"this is description\",\n        \"expired_at\": \"2022-08-31T06:57:43.178Z\",\n        \"created_at\": \"2022-08-30T06:57:43.179Z\",\n        \"updated_at\": \"2022-08-30T06:57:43.179Z\"\n      },\n      {\n        \"id\": 28,\n        \"name\": \"test allergen - 27\",\n        \"manufacture\": \"kdan\",\n        \"description\": \"this is description\",\n        \"expired_at\": \"2022-08-31T06:57:43.181Z\",\n        \"created_at\": \"2022-08-30T06:57:43.181Z\",\n        \"updated_at\": \"2022-08-30T06:57:43.181Z\"\n      }\n    ]\n  }\n}"
+              }
+            ]
+          },
+          {
+            "name": "更新抗過敏藥",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer KBk8ITnjpZKWJHCYyWz9-INndP1WLvAZ66fyNdcWE9Q"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/medicines/34",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "medicines",
+                  "34"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"new name\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功更新資料",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer KBk8ITnjpZKWJHCYyWz9-INndP1WLvAZ66fyNdcWE9Q"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines/34",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines",
+                      "34"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"new name\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"eea893ccfe30690143c7a85256b12d51\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "66e0447c-34b7-4375-b682-868a7e2c60d8"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.005027"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "213"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/update_spec.rb:26"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": 34,\n    \"name\": \"new name\",\n    \"manufacture\": \"kdan\",\n    \"description\": \"this is description\",\n    \"expired_at\": \"2022-08-31T06:57:43.265Z\",\n    \"created_at\": \"2022-08-30T06:57:43.265Z\",\n    \"updated_at\": \"2022-08-30T06:57:43.271Z\"\n  }\n}"
+              },
+              {
+                "name": "更新資料失敗(找不到抗過敏藥)",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer Bq9ZbSXIcZQ1a2YX-tecJ9WuQEYlj3v1oGol5ACdVBQ"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines/123456",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines",
+                      "123456"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"new name\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "404",
+                "code": 404,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "0ae56e47-7554-40fc-8102-42d38d72cd7f"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.003080"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "92"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/update_spec.rb:34"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 4040003,\n  \"error_message\": \"medicine not found\",\n  \"error_key\": \"medicine_not_found\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medicines",
+        "description": "",
+        "item": [
+          {
+            "name": "新增抗過敏藥",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer 38t78Fw9gzTiuOeM_9EdcxBUycDPlcbf-n2tQWMeE-E"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/medicines",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "medicines"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"name\": \"anti allergery\",\n  \"expired_at\": \"2022-09-02T14:57:42.948+08:00\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功新增資料",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer 38t78Fw9gzTiuOeM_9EdcxBUycDPlcbf-n2tQWMeE-E"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/medicines",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "medicines"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"anti allergery\",\n  \"expired_at\": \"2022-09-02T14:57:42.948+08:00\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"da6056a288b22e636859c41718f78c69\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "1aafc649-a3c6-4f1e-a5fd-62b1d926e2d3"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.034474"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "200"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/medecines/base_controller/create_spec.rb:25"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": 11,\n    \"name\": \"anti allergery\",\n    \"manufacture\": null,\n    \"description\": null,\n    \"expired_at\": \"2022-09-02T06:57:42.948Z\",\n    \"created_at\": \"2022-08-30T06:57:42.971Z\",\n    \"updated_at\": \"2022-08-30T06:57:42.971Z\"\n  }\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Profile",
+        "description": "",
+        "item": [
+          {
+            "name": "取得個人資料",
+            "request": {
+              "method": "GET",
+              "header": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer 9-Ksqus90biOQGAgQs3tEoQwTG7I2QK6ghShszx3hSU"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/profile",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "profile"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": null,
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "成功取得資料",
+                "originalRequest": {
+                  "method": "GET",
+                  "header": [
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer 9-Ksqus90biOQGAgQs3tEoQwTG7I2QK6ghShszx3hSU"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/profile",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "profile"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": null
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"dddf85a35546ecf0b1d1cd1abbdcead8\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "c4115948-6062-49e3-80e1-1e5f215ae531"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.011546"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "98"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/profile_controller/show_spec.rb:20"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"name\": \"testusername\",\n    \"lang\": \"zh-TW\",\n    \"birthday\": \"2017-03-15T00:00:00.000Z\",\n    \"phone\": null\n  }\n}"
+              }
+            ]
+          },
+          {
+            "name": "更新個人資料",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Authorization",
+                  "value": "Bearer GVvIDXGdPC0Me_hTqmDuYPDJn-Qs81PKWrkmgMxXso0"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/profile",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "profile"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"birthday\": \"2021/03/25\",\n  \"name\": \"chang\",\n  \"lang\": \"zh-TW\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "更新成功",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer GVvIDXGdPC0Me_hTqmDuYPDJn-Qs81PKWrkmgMxXso0"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/profile",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "profile"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"birthday\": \"2021/03/25\",\n  \"name\": \"chang\",\n  \"lang\": \"zh-TW\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"7a45c557a093c976db9150cef280eda1\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "3effb194-f874-4646-9622-67ec009e5e3d"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.005571"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "91"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/profile_controller/update_spec.rb:26"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\",\n    \"birthday\": \"2021-03-25T00:00:00.000Z\",\n    \"phone\": null\n  }\n}"
+              },
+              {
+                "name": "更新失敗(參數不合法)",
+                "originalRequest": {
+                  "method": "PUT",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Authorization",
+                      "value": "Bearer gO5dh6HTAFjWyyAJQfkqhcpK5r2L4ijmz_QbT3QgLJk"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/profile",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "profile"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"birthday\": \"2035/01/01\",\n  \"name\": \"chang\",\n  \"lang\": \"zh-TW\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "400",
+                "code": 400,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "7c93a1eb-8c5e-4e67-ab00-71a29a3f8e43"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.404849"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "193"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/profile_controller/update_spec.rb:34"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 400000,\n  \"error_message\": \"invalid params: {:error_message=>\\\"ActiveRecord::RecordInvalid: Validation failed: Birthday  must earlier than today\\\"}\",\n  \"error_key\": \"missing_params\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "User",
+        "description": "",
+        "item": [
+          {
+            "name": "註冊",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "url": {
+                "raw": "{{server_host}}/api/v1/user/register",
+                "host": [
+                  "{{server_host}}"
+                ],
+                "path": [
+                  "",
+                  "api",
+                  "v1",
+                  "user",
+                  "register"
+                ],
+                "query": [
+
+                ]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"email\": \"new_email@gmail.com\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"NyfRjVQqXKQpcokn8_g4TL7lqhDEETl0fwGw4ltH5Qw\",\n  \"client_secret\": \"5HTWekQa-XeGwWkObeXtbhgRBiu6EfQNmvmCjX4FOcc\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "description": ""
+            },
+            "response": [
+              {
+                "name": "註冊成功",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/user/register",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "user",
+                      "register"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"new_email@gmail.com\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"NyfRjVQqXKQpcokn8_g4TL7lqhDEETl0fwGw4ltH5Qw\",\n  \"client_secret\": \"5HTWekQa-XeGwWkObeXtbhgRBiu6EfQNmvmCjX4FOcc\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "200",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "ETag",
+                    "value": "W/\"d59c33c79b41a68b3b72707118324f25\""
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "4baf04ee-9876-4ada-bf48-657c39138e0d"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.043614"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "332"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/user_controller/register_spec.rb:31"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": 21,\n    \"email\": \"new_email@gmail.com\",\n    \"profile\": {\n      \"name\": \"chang\",\n      \"lang\": \"zh-TW\",\n      \"birthday\": \"2021-03-25T00:00:00.000Z\",\n      \"phone\": null\n    },\n    \"access_token\": {\n      \"token\": \"GjCyJuV-LjJQ37A59DDr6QvDGbakGEvGj7ZxaDlJiHM\",\n      \"expires_in\": 7200,\n      \"refresh_token\": \"5HpUkket3gbph4lZ9eeeP70614KsZrl_e9VtqlXEWZQ\",\n      \"token_type\": {\n      },\n      \"created_at\": 1661842663\n    }\n  }\n}"
+              },
+              {
+                "name": "註冊失敗(缺少必要參數)",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/user/register",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "user",
+                      "register"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"new_email@gmail.com\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"3zPRjVBIIfP_yTMK3TqHXht-unQEEsykCsRkzDj6ZvA\",\n  \"client_secret\": \"oF8ei4OBqoZXFzNEivgZerbKr_zx_jGTdxQk6nlt4J8\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "400",
+                "code": 400,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "f928e76d-d38b-426f-8d00-72cc115f46bc"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.000847"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "256"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/user_controller/register_spec.rb:39"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 400000,\n  \"error_message\": \"invalid params: {:error_message=>\\\"Parameter password is required (/Users/kdanmobile/.rvm/gems/ruby-3.0.3/gems/rails_param-1.3.0/lib/rails_param/param_evaluator.rb:29:in `param!')\\\"}\",\n  \"error_key\": \"missing_params\"\n}"
+              },
+              {
+                "name": "註冊失敗(信箱不合法)",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/user/register",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "user",
+                      "register"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"test.acc\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"5v4spdh-xKdAeydTDpse6UT91oi1gu8i9xm8mhRVotY\",\n  \"client_secret\": \"bPjZKQH-54qhCDtsK-XY2BugzrzVO-YCRB_V9e9bPdc\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "400",
+                "code": 400,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "d0fbc84b-43f6-40ec-b890-6f8f698e3e7b"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.001701"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "81"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/user_controller/register_spec.rb:50"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 400002,\n  \"error_message\": \"invalid email\",\n  \"error_key\": \"invalid_email\"\n}"
+              },
+              {
+                "name": "註冊失敗(信箱已被使用)",
+                "originalRequest": {
+                  "method": "POST",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "url": {
+                    "raw": "{{server_host}}/api/v1/user/register",
+                    "host": [
+                      "{{server_host}}"
+                    ],
+                    "path": [
+                      "",
+                      "api",
+                      "v1",
+                      "user",
+                      "register"
+                    ],
+                    "query": [
+
+                    ]
+                  },
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"test23@test.com\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"JhDt0xVzgxtgpbc-Wg2x7X9yjNz7Nt5zb-9Xkm_W7fU\",\n  \"client_secret\": \"gcmeXDsjljlgjuAn0wUiQsgRpToVysWzflQX9GN6sfM\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "status": "400",
+                "code": 400,
+                "_postman_previewlanguage": "json",
+                "header": [
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "0"
+                  },
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Download-Options",
+                    "value": "noopen"
+                  },
+                  {
+                    "key": "X-Permitted-Cross-Domain-Policies",
+                    "value": "none"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "key": "Cache-Control",
+                    "value": "no-cache"
+                  },
+                  {
+                    "key": "X-Request-Id",
+                    "value": "5416d47f-ed93-40be-9e44-411a73d866f1"
+                  },
+                  {
+                    "key": "X-Runtime",
+                    "value": "0.002589"
+                  },
+                  {
+                    "key": "Vary",
+                    "value": "Origin"
+                  },
+                  {
+                    "key": "Content-Length",
+                    "value": "103"
+                  },
+                  {
+                    "key": "RSpec-Location",
+                    "value": "./spec/controller/api/v1/user_controller/register_spec.rb:61"
+                  }
+                ],
+                "body": "{\n  \"error_code\": 400005,\n  \"error_message\": \"email already registered\",\n  \"error_key\": \"email_already_registered\"\n}"
+              }
+            ]
+          },
+          {
+            "name": "Create",
+            "description": "",
+            "item": [
+
+            ]
+          },
+          {
+            "name": "Register",
+            "description": "",
+            "item": [
+
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "name": "更新失敗(參數不合法)",
+  "originalRequest": {
+    "method": "PUT",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer gO5dh6HTAFjWyyAJQfkqhcpK5r2L4ijmz_QbT3QgLJk"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/profile",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "profile"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"birthday\": \"2035/01/01\",\n  \"name\": \"chang\",\n  \"lang\": \"zh-TW\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "400",
+  "code": 400,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "7c93a1eb-8c5e-4e67-ab00-71a29a3f8e43"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.404849"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "193"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/profile_controller/update_spec.rb:34"
+    }
+  ],
+  "body": "{\n  \"error_code\": 400000,\n  \"error_message\": \"invalid params: {:error_message=>\\\"ActiveRecord::RecordInvalid: Validation failed: Birthday  must earlier than today\\\"}\",\n  \"error_key\": \"missing_params\"\n}"
+}

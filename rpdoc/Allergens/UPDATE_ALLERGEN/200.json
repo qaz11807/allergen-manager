@@ -1,0 +1,103 @@
+{
+  "name": "成功更新資料",
+  "originalRequest": {
+    "method": "PUT",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer OBBr8wtMPSh35CrsS6wy2b0gOnZaShGHO3vtuy4lj-E"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/allergens/34",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "allergens",
+        "34"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"name\": \"new name\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "200",
+  "code": 200,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "ETag",
+      "value": "W/\"e0fe47a0c16d68526ccb32736f1b00b8\""
+    },
+    {
+      "key": "Cache-Control",
+      "value": "max-age=0, private, must-revalidate"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "608b34e5-ec1c-4091-9498-43eacec1b50d"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.009472"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "116"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/allergens/base_controller/update_spec.rb:26"
+    }
+  ],
+  "body": "{\n  \"data\": {\n    \"id\": 34,\n    \"name\": \"new name\",\n    \"created_at\": \"2022-08-30T06:57:42.690Z\",\n    \"updated_at\": \"2022-08-30T06:57:42.700Z\"\n  }\n}"
+}

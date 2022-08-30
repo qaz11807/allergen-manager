@@ -1,0 +1,99 @@
+{
+  "name": "成功取得資料(分頁)",
+  "originalRequest": {
+    "method": "GET",
+    "header": [
+      {
+        "key": "Authorization",
+        "value": "Bearer tNQT06WYSlTf893O5kVfz3CpyOIABv5RfYnas4FUJVc"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/allergens",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "allergens"
+      ],
+      "query": [
+        {
+          "key": "page",
+          "value": "1",
+          "text": "text"
+        },
+        {
+          "key": "per_page",
+          "value": "5",
+          "text": "text"
+        }
+      ]
+    },
+    "body": null
+  },
+  "status": "200",
+  "code": 200,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "ETag",
+      "value": "W/\"8470da88176b66cecca298d1de26e948\""
+    },
+    {
+      "key": "Cache-Control",
+      "value": "max-age=0, private, must-revalidate"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "8a6f6ff8-e4b6-47ab-bd0d-bca9671e3f63"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.009769"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "664"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/allergens/base_controller/index_spec.rb:30"
+    }
+  ],
+  "body": "{\n  \"data\": {\n    \"current_page\": 1,\n    \"total_pages\": 2,\n    \"total_count\": 10,\n    \"allergens\": [\n      {\n        \"id\": 24,\n        \"name\": \"test allergen - 23\",\n        \"created_at\": \"2022-08-30T06:57:42.571Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.571Z\"\n      },\n      {\n        \"id\": 25,\n        \"name\": \"test allergen - 24\",\n        \"created_at\": \"2022-08-30T06:57:42.575Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.575Z\"\n      },\n      {\n        \"id\": 26,\n        \"name\": \"test allergen - 25\",\n        \"created_at\": \"2022-08-30T06:57:42.578Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.578Z\"\n      },\n      {\n        \"id\": 27,\n        \"name\": \"test allergen - 26\",\n        \"created_at\": \"2022-08-30T06:57:42.582Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.582Z\"\n      },\n      {\n        \"id\": 28,\n        \"name\": \"test allergen - 27\",\n        \"created_at\": \"2022-08-30T06:57:42.588Z\",\n        \"updated_at\": \"2022-08-30T06:57:42.588Z\"\n      }\n    ]\n  }\n}"
+}

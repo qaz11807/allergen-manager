@@ -1,0 +1,29 @@
+missing_params:
+  error_code: 400_000
+  error_message: invalid params
+invalid_client:
+  error_code: 400_001
+  error_message: invalid client
+invalid_email:
+  error_code: 400_002
+  error_message: invalid email
+email_already_registered:
+  error_code: 400_005
+  error_message: email already registered
+
+user_not_found:
+  error_code: 404_0001
+  error_message: allergen not found
+allergen_not_found:
+  error_code: 404_0002
+  error_message: allergen not found
+medicine_not_found:
+  error_code: 404_0003
+  error_message: medicine not found
+contact_not_found:
+  error_code: 404_0004
+  error_message: contact not found
+
+unconfirmed:
+  error_code: 422_000
+  error_message: user not confirmed

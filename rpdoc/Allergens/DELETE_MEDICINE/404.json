@@ -1,0 +1,96 @@
+{
+  "name": "更新資料失敗(找不到抗過敏藥)",
+  "originalRequest": {
+    "method": "DELETE",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer 2IS7LUaf3cSj6hO7E06EdLfKd-ABCs0jJ9Hg_lcm2XQ"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/medicines/123456",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "medicines",
+        "123456"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "formdata",
+      "formdata": [
+
+      ]
+    }
+  },
+  "status": "404",
+  "code": 404,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "66915a01-9ebd-4eff-bf96-8dd1b2da7aa6"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.004408"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "92"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/medecines/base_controller/destroy_spec.rb:32"
+    }
+  ],
+  "body": "{\n  \"error_code\": 4040003,\n  \"error_message\": \"medicine not found\",\n  \"error_key\": \"medicine_not_found\"\n}"
+}

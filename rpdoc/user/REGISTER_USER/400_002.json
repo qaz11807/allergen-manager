@@ -1,0 +1,95 @@
+{
+  "name": "註冊失敗(信箱不合法)",
+  "originalRequest": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/user/register",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "user",
+        "register"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"email\": \"test.acc\",\n  \"password\": \"rootroot\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"5v4spdh-xKdAeydTDpse6UT91oi1gu8i9xm8mhRVotY\",\n  \"client_secret\": \"bPjZKQH-54qhCDtsK-XY2BugzrzVO-YCRB_V9e9bPdc\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "400",
+  "code": 400,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "d0fbc84b-43f6-40ec-b890-6f8f698e3e7b"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.001701"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "81"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/user_controller/register_spec.rb:50"
+    }
+  ],
+  "body": "{\n  \"error_code\": 400002,\n  \"error_message\": \"invalid email\",\n  \"error_key\": \"invalid_email\"\n}"
+}

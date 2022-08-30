@@ -1,0 +1,95 @@
+{
+  "name": "註冊失敗(缺少必要參數)",
+  "originalRequest": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "url": {
+      "raw": "{{server_host}}/api/v1/user/register",
+      "host": [
+        "{{server_host}}"
+      ],
+      "path": [
+        "",
+        "api",
+        "v1",
+        "user",
+        "register"
+      ],
+      "query": [
+
+      ]
+    },
+    "body": {
+      "mode": "raw",
+      "raw": "{\n  \"email\": \"new_email@gmail.com\",\n  \"profile\": {\n    \"birthday\": \"2021/03/25\",\n    \"name\": \"chang\",\n    \"lang\": \"zh-TW\"\n  },\n  \"client_id\": \"3zPRjVBIIfP_yTMK3TqHXht-unQEEsykCsRkzDj6ZvA\",\n  \"client_secret\": \"oF8ei4OBqoZXFzNEivgZerbKr_zx_jGTdxQk6nlt4J8\"\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    }
+  },
+  "status": "400",
+  "code": 400,
+  "_postman_previewlanguage": "json",
+  "header": [
+    {
+      "key": "X-Frame-Options",
+      "value": "SAMEORIGIN"
+    },
+    {
+      "key": "X-XSS-Protection",
+      "value": "0"
+    },
+    {
+      "key": "X-Content-Type-Options",
+      "value": "nosniff"
+    },
+    {
+      "key": "X-Download-Options",
+      "value": "noopen"
+    },
+    {
+      "key": "X-Permitted-Cross-Domain-Policies",
+      "value": "none"
+    },
+    {
+      "key": "Referrer-Policy",
+      "value": "strict-origin-when-cross-origin"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache"
+    },
+    {
+      "key": "X-Request-Id",
+      "value": "f928e76d-d38b-426f-8d00-72cc115f46bc"
+    },
+    {
+      "key": "X-Runtime",
+      "value": "0.000847"
+    },
+    {
+      "key": "Vary",
+      "value": "Origin"
+    },
+    {
+      "key": "Content-Length",
+      "value": "256"
+    },
+    {
+      "key": "RSpec-Location",
+      "value": "./spec/controller/api/v1/user_controller/register_spec.rb:39"
+    }
+  ],
+  "body": "{\n  \"error_code\": 400000,\n  \"error_message\": \"invalid params: {:error_message=>\\\"Parameter password is required (/Users/kdanmobile/.rvm/gems/ruby-3.0.3/gems/rails_param-1.3.0/lib/rails_param/param_evaluator.rb:29:in `param!')\\\"}\",\n  \"error_key\": \"missing_params\"\n}"
+}
