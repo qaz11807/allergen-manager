@@ -8,7 +8,7 @@ RSpec.describe '/allergens#update', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'UPDATE_MEDICINE'
     example.metadata[:rpdoc_action_name] = '更新抗過敏藥'
-    example.metadata[:rpdoc_example_folders] = ['Medicine']
+    example.metadata[:rpdoc_example_folders] = ['Medicines']
 
     @medicine = create(:medicine, user: @user)
 
