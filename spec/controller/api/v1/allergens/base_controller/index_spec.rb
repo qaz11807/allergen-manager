@@ -8,7 +8,7 @@ RSpec.describe '/allergens#index', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'GET_ALLERGENS'
     example.metadata[:rpdoc_action_name] = '取得所有過敏原'
-    example.metadata[:rpdoc_example_folders] = ['Allergens']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'Allergens']
 
     @allergens = create_list(:allergen, 10, user: @user)
 

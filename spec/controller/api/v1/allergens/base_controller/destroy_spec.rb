@@ -8,7 +8,7 @@ RSpec.describe '/allergens#destroy', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'DELETE_ALLERGEN'
     example.metadata[:rpdoc_action_name] = '刪除過敏原'
-    example.metadata[:rpdoc_example_folders] = ['Allergens']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'Allergens']
 
     @allergen = create(:allergen, user: @user)
 

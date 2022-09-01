@@ -8,7 +8,7 @@ RSpec.describe '/profile#update', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'UPDATE_PROFILE'
     example.metadata[:rpdoc_action_name] = '更新個人資料'
-    example.metadata[:rpdoc_example_folders] = ['Profile']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'Profile']
 
     @headers = {
       'Authorization': "Bearer #{@token}",

@@ -8,7 +8,7 @@ RSpec.describe '/medicines#bulk_destroy', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'DELETE_MEDICINES'
     example.metadata[:rpdoc_action_name] = '刪除多個抗過敏藥'
-    example.metadata[:rpdoc_example_folders] = ['Medicines']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'Medicines']
 
     @medicines = create_list(:medicine, 10, user: @user)
 

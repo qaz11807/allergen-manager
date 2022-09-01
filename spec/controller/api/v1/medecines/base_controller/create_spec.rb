@@ -8,7 +8,7 @@ RSpec.describe '/medicines#create', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'CREATE_MEDICINE'
     example.metadata[:rpdoc_action_name] = '新增抗過敏藥'
-    example.metadata[:rpdoc_example_folders] = ['Medicines']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'Medicines']
 
     @headers = {
       'Authorization': "Bearer #{@token}",

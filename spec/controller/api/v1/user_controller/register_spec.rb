@@ -8,7 +8,7 @@ RSpec.describe '/user#register', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'REGISTER_USER'
     example.metadata[:rpdoc_action_name] = '註冊'
-    example.metadata[:rpdoc_example_folders] = ['User']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'User']
 
     @headers = {
       'Content-Type': 'application/json'

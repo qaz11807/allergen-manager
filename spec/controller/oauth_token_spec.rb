@@ -8,7 +8,7 @@ RSpec.describe '/oauth/token', type: :request do
   before(:each) do |example|
     example.metadata[:rpdoc_action_key] = 'OAUTH_TOKEN'
     example.metadata[:rpdoc_action_name] = '登入'
-    example.metadata[:rpdoc_example_folders] = ['User']
+    example.metadata[:rpdoc_example_folders] = ['Api', 'V1', 'User']
 
     @headers = {
       'Content-Type': 'application/json'
