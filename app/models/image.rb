@@ -2,17 +2,16 @@ class Image < ApplicationRecord
   belongs_to :imagable, polymorphic: true
   has_one_attached :file
 
-  before_save :generate_url
-
-  def generate_url
-    self.url = image_file.url
-    self.thumbnail_url = thumbnail.url
-    save
+  def generate_url!
+    update(
+      url: file.url,
+      thumbnail_url: thumbnail.url
+    )
   end
 
   private
 
   def thumbnail
-    image_file.variant(resize_to_limit: [100, 100]).processed
+    file.variant(resize_to_limit: [50, 50]).processed
   end
 end

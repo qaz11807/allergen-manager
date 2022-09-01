@@ -1,0 +1,16 @@
+default: &default
+  host: 'http://localhost:3000'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+preparing:
+  <<: *default
+  host: 'http://localhost:3000'
+
+production:
+  <<: *default
+  host: 'http://localhost:3000'

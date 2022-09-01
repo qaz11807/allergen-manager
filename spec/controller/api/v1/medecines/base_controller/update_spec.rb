@@ -22,7 +22,7 @@ RSpec.describe '/allergens#update', type: :request do
     @path = '/api/v1/medicines'
   end
 
-  describe 'Update allergen' do
+  describe 'Update medicine' do
     it 'should return code 200' do |example|
       example.metadata[:rpdoc_example_key] = '200'
       example.metadata[:rpdoc_example_name] = '成功更新資料'

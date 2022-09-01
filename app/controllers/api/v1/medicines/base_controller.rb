@@ -2,6 +2,7 @@
 
 class Api::V1::Medicines::BaseController < Api::V1::ApplicationController
   before_action :setup_medicine, only: [:update, :update_image, :destroy]
+  before_action :setup_active_storage_url, only: :update_image
 
   def index
     per_page = params[:per_page] || Medicine::PER_PAGE
@@ -22,11 +23,7 @@ class Api::V1::Medicines::BaseController < Api::V1::ApplicationController
   end
 
   def update_image
-    if @medicine.image.nil?
-      @medicine.build_image(file: params[:image])
-    else
-      @medicine.image.attach(params[:image])
-    end
+    @medicine.update_image(params[:image])
 
     serialize_response(:medicine, @medicine)
   end

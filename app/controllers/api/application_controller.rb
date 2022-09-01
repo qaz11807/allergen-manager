@@ -5,6 +5,8 @@ class Api::ApplicationController < ApplicationController
   before_action :doorkeeper_authorize!
   before_action :validate_params
 
+  # ActiveStorage::Current.url_options = { protocol: request.protocol, host: request.host, port: request.port }
+
   rescue_from ArgumentError do |exception|
     error_response(
       :unknown,
@@ -23,6 +25,11 @@ class Api::ApplicationController < ApplicationController
   def doorkeeper_unauthorized_render_options(opts)
     error_response = ErrorResponse.to_api(:invalid_grant, opts[:error].description)
     { json: error_response[:json] }
+  end
+
+  def setup_active_storage_url
+    req = URI.parse(Settings.host)
+    ActiveStorage::Current.url_options = { protocol: req.scheme, host: req.host, port: req.port }
   end
 
   private

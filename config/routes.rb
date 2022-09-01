@@ -27,6 +27,9 @@ Rails.application.routes.draw do
       resources :medicines, module: :medicines, controller: :base, expect: [:show] do
         collection do
           delete '/', action: 'bulk_destroy'
+        end
+
+        member do
           put '/image', action: 'update_image'
         end
 
