@@ -20,6 +20,11 @@ class Api::ApplicationController < ApplicationController
     error_response(:missing_params, error_message: "#{e.class.name}: #{e.message}")
   end
 
+  def doorkeeper_unauthorized_render_options(opts)
+    error_response = ErrorResponse.to_api(:invalid_grant, opts[:error].description)
+    { json: error_response[:json] }
+  end
+
   private
 
   def current_user

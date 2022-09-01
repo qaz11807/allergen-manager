@@ -27,7 +27,7 @@ RSpec.describe '/user#register', type: :request do
     @path = '/api/v1/user/register'
   end
 
-  describe 'Popst users/register' do
+  describe 'Post users/register' do
     it 'should return code 200' do |example|
       example.metadata[:rpdoc_example_key] = '200'
       example.metadata[:rpdoc_example_name] = '註冊成功'
