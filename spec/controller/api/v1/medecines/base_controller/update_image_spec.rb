@@ -16,7 +16,7 @@ RSpec.describe '/allergens#update_image', type: :request do
       'Authorization': "Bearer #{@token}",
       'Content-Type': 'multipart/form-data'
     }
-    @path = '/api/v1/medicines'
+    @path = "/api/v1/medicines/#{@medicine.id}/image"
   end
 
   describe 'Update medicine image' do
@@ -29,11 +29,10 @@ RSpec.describe '/allergens#update_image', type: :request do
         image: file
       }
 
-      put("#{@path}/#{@medicine.id}/image", headers: @headers, params: params)
+      put(@path,  headers: @headers, params: params)
       expect(response).to have_http_status(:ok)
 
       @medicine.reload
-      # binding.pry
       expect(@medicine.image.file.attached?).to eq(true)
     end
   end

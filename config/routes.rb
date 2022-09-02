@@ -43,8 +43,8 @@ Rails.application.routes.draw do
 
       resources :contacts do
         collection do
-          put '/orders', action: 'orders'
-          delete '/', action: 'bulk'
+          put '/orders', action: 'update_orders'
+          delete '/', action: 'bulk_destroy'
         end
       end
     end

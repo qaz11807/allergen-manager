@@ -14,11 +14,6 @@ RSpec.describe '/profile#update', type: :request do
       'Authorization': "Bearer #{@token}",
       'Content-Type': 'application/json'
     }
-    @params = {
-      birthday: '2021/03/25',
-      name: 'chang',
-      lang: 'zh-TW'
-    }
     @path = '/api/v1/profile'
   end
 
@@ -27,17 +22,28 @@ RSpec.describe '/profile#update', type: :request do
       example.metadata[:rpdoc_example_key] = '200'
       example.metadata[:rpdoc_example_name] = '更新成功'
 
-      put(@path, headers: @headers, params: @params.to_json)
+      params = {
+        birthday: '2021/03/25',
+        name: 'chang',
+        lang: 'zh-TW'
+      }
+
+      put(@path, headers: @headers, params: params.to_json)
       expect(response).to have_http_status(:ok)
+
+      @user.reload
+      expect(@user.profile.name).to eq(params[:name])
     end
 
     it 'should return code 400' do |example|
       example.metadata[:rpdoc_example_key] = '400'
       example.metadata[:rpdoc_example_name] = '更新失敗(參數不合法)'
 
-      @params[:birthday] = '2035/01/01'
+      params = {
+        birthday: '2035/01/01',
+      }
 
-      put(@path, headers: @headers, params: @params.to_json)
+      put(@path, headers: @headers, params: params.to_json)
       expect(response).to have_http_status(400)
     end
   end

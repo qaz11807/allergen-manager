@@ -14,9 +14,6 @@ RSpec.describe '/allergens#create', type: :request do
       'Authorization': "Bearer #{@token}",
       'Content-Type': 'application/json'
     }
-    @params = {
-      name: 'fruit'
-    }
     @path = '/api/v1/allergens'
   end
 
@@ -25,8 +22,14 @@ RSpec.describe '/allergens#create', type: :request do
       example.metadata[:rpdoc_example_key] = '200'
       example.metadata[:rpdoc_example_name] = '成功新增資料'
 
-      post(@path, headers: @headers, params: @params.to_json)
+      params = {
+        name: 'fruit'
+      }
+
+      post(@path, headers: @headers, params: params.to_json)
       expect(response).to have_http_status(:ok)
+
+      expect(Allergen.find_by(id: json['data']['id'])).to be_present
     end
   end
 end

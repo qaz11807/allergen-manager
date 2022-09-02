@@ -24,6 +24,10 @@ contact_not_found:
   error_code: 404_0004
   error_message: contact not found
 
+add_or_remove_error:
+  error_code: 406_0001
+  error_message: add or remove failed, please retry.
+
 unconfirmed:
   error_code: 422_000
   error_message: user not confirmed

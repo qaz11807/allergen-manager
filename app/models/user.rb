@@ -13,6 +13,7 @@ class User < ApplicationRecord
   # has_many :contacts, dependent: :destroy
   has_many :allergens, dependent: :destroy
   has_many :medicines, dependent: :destroy
+  has_many :contacts, dependent: :destroy
 
   class << self
     def authenticate(email, password)
