@@ -18,15 +18,16 @@ test:
 
 preparing:
   <<: *default
-  database: allergen_manager_preparing
-  host: "<%= ENV['DATABASE_HOST'] || 'localhost' %>"
-  username: postgres
-  password: root
+  database: "<%= ENV['DATABASE_DBNAME'] %>"
+  host: "<%= ENV['DATABASE_HOST'] %>"
+  username: "<%= ENV['DATABASE_USERNAME'] %>"
+  password: "<%= ENV['DATABASE_PASSWORD'] %>"
   
 production:
   <<: *default
-  database: allergen_manager_production
-  host: "<%= ENV['DATABASE_HOST'] || 'localhost' %>"
-  username: postgres
-  password: root
+  database: "<%= ENV['DATABASE_DBNAME'] %>"
+  host: "<%= ENV['DATABASE_HOST'] %>"
+  username: "<%= ENV['DATABASE_USERNAME'] %>"
+  password: "<%= ENV['DATABASE_PASSWORD'] %>"
+  pool: 50
  
