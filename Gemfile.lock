@@ -161,10 +161,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
-<<<<<<< HEAD
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
-=======
     orm_adapter (0.5.0)
     pg (1.2.3)
     pry (0.13.1)
@@ -175,7 +173,6 @@ GEM
       pry (~> 0.13.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
->>>>>>> development
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
