@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# allergen-manager
-=======
 # 說明
 
 ## 需求
@@ -67,4 +64,3 @@ APP的主打的對象為 "急性且嚴重過敏的使用者"，可用來設定�
 | client_secret | 7zmvS6KXJyD7xn3-O0usyj3dUQwNSJsdqLH2lZ0rpdQ |
 
 
->>>>>>> development
