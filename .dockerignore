@@ -1,0 +1,35 @@
+.git
+.dockerignore
+
+# Ignore bundler config.
+/.bundle
+
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+
+/tmp/*
+!/tmp/.keep
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore rspec coverage result
+/coverage/*
+
+# Ignore bundle config
+/.bundle/*
+
+# Miscs
+.git
+.dockerignore
+.editorconfig
+.gitignore
+.gitlab-ci.yml
+.rspec
+.DS_Store
+Dockerfile
