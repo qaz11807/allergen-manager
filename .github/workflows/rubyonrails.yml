@@ -21,7 +21,7 @@ jobs:
         env:
           POSTGRES_DB: allergen_manager_test
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 24373514
+          POSTGRES_PASSWORD: root
     env:
       RAILS_ENV: test
     steps:
